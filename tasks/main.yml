@@ -1,0 +1,12 @@
+---
+# tasks file for nginx
+- name: Install nginx
+  ansible.builtin.apt:
+    name:
+      - nginx
+    state: present
+  become: true
+
+- name: Copy proxy cfg
+
+- name: Restart+enable nginx
